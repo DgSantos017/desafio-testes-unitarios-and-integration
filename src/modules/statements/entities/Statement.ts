@@ -11,7 +11,7 @@ import { User } from '../../users/entities/User'
 
 
 
-enum OperationType {
+export enum OperationType {
   DEPOSIT = 'deposit',
   WITHDRAW = 'withdraw'
 }

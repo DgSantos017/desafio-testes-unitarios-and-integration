@@ -1,4 +1,4 @@
-import { MigrationInterface, QueryRunner, Table } from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from 'typeorm'
 
 export class accountsTable1616682561481 implements MigrationInterface {
 
@@ -9,21 +9,21 @@ export class accountsTable1616682561481 implements MigrationInterface {
         {
           name: 'id',
           type: 'uuid',
-          isPrimary: true,
+          isPrimary: true
         },
         {
           name: 'user_id',
-          type: 'uuid',
+          type: 'uuid'
         },
         {
           name: 'description',
-          type: 'varchar',
+          type: 'varchar'
         },
         {
           name: 'amount',
           type: 'decimal',
           precision: 5,
-          scale: 2,
+          scale: 2
         },
         {
           name: 'type',
@@ -55,7 +55,6 @@ export class accountsTable1616682561481 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable('statements');
+    await queryRunner.dropTable('statements')
   }
-
 }
